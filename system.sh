@@ -111,6 +111,7 @@ fi
 hide_output sudo apt-get update
 
 apt_install php7.2-fpm php7.2-opcache php7.2-fpm php7.2 php7.2-common php7.2-gd \
+php7.2-memcache php7.2-memcached memcached \
 php7.2-mysql php7.2-imap php7.2-cli php7.2-cgi \
 php-pear php-auth-sasl mcrypt imagemagick libruby \
 php7.2-curl php7.2-intl php7.2-pspell php7.2-recode php7.2-sqlite3 \
@@ -122,7 +123,6 @@ nginx pwgen libgmp3-dev libmysqlclient-dev libcurl4-gnutls-dev \
 libkrb5-dev libldap2-dev libidn11-dev gnutls-dev librtmp-dev \
 build-essential libtool autotools-dev automake pkg-config libevent-dev bsdmainutils libssl-dev
 
-hide_output sudo apt-get install php7.2-memcache php7.2-memcached memcached -y
 
 echo -e "$GREEN Done...$COL_RESET"
 echo -e " Downloading Original-Tasty YiiMP Repo...$COL_RESET"
